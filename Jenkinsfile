@@ -13,6 +13,11 @@ pipeline {
             echo 'I am in Checkout process'
           }
         }
+        stage('Build') {
+          steps {
+            echo 'Build, but only for branch HOB1-001'
+          }
+        }        
       }
     }
   }
